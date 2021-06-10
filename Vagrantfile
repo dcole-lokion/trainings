@@ -286,8 +286,8 @@ ____DOCTRINECONFIG
 
     setfacl -b -R ./
     cd /var/www/oroapp
-    find . -type f -exec chmod 0644 {} \\;
-    find . -type d -exec chmod 0755 {} \\;
+    find . -type f -exec chmod 0644 {} \;
+    find . -type d -exec chmod 0755 {} \;
     chown -R nginx:nginx ./var/{sessions,data,cache,logs}
     chown -R nginx:nginx ./public/{media,js}
 
